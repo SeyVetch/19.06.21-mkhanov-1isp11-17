@@ -28,17 +28,16 @@ namespace _19._06._21
         {
             Console.WriteLine("ручн" + (gender == 0 ? "ая кошка " : "ой кот ") + colour + " цвета с " + pattern + " типом окраски");
         }
-
-        class Tiger : Feline
+    }
+    class Tiger : Feline
+    {
+        new public string size = "big";
+        new public void Call()
         {
-            new public string size = "big";
-            new public void Call()
-            {
-                Console.WriteLine("не ручн" + (gender == 0 ? "ая тигра " : "ой ктигрот ") + colour + " цвета с " + pattern + " типом окраски");
-            }
+            Console.WriteLine("не ручн" + (gender == 0 ? "ая тигра " : "ой ктигрот ") + colour + " цвета с " + pattern + " типом окраски");
         }
     }
-class Program
+    class Program
     {
         static void Main(string[] args)
         {
